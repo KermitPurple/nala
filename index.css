@@ -1,0 +1,58 @@
+:root{
+    --bg: #779;
+    --fg: #ddf;
+    --font: 'Anton', sans-serif;
+}
+
+html, body{
+    margin: 0;
+    padding: 0;
+    width: 100%;
+    height: 100%;
+    font-family: var(--font);
+}
+
+body{
+    background: var(--bg);
+    color: var(--fg);
+}
+
+.title-div{
+    background-image: url('./images/nala.jpg');
+    background-repeat: no-repeat;
+    background-position: 50% 40%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    max-height: 64%;
+    background-size: 100%;
+}
+
+.title{
+    font-size: 30vw;
+    color: #224;
+    mix-blend-mode: screen;
+    text-shadow: 1px;
+}
+
+.letter{
+    transition: color .3s ease;
+}
+
+.letter:hover{
+    color: var(--fg);
+}
+
+.content{
+    margin: 0 5%;
+}
+
+.subtitle{
+    font-size: 4rem;
+    text-align: center;
+}
+
+@media only screen and (max-width: 760px){
+    .title-div{
+    }
+}
